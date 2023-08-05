@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Signup</title>
+<link rel="stylesheet" href="./newsArticle.css"></link>
+</head>
+<body>
+    <form  method="post" action="/submit" enctype="multipart/form-data">
+        <div>
+            <label for="fullName">Full Name:</label>
+            <input id="fullName" type="text" name="fullName"  required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email"  required>
+        </div>
+        <div>
+            <label for="about">About Me:</label>
+            <textarea name="about" id="about" rows="3" cols="50"></textarea>
+        </div>
+        <div>
+            <label for="picture">Profile Picture:</label>
+            <input type="file" name="picture" id="picture">
+        </div>
+        <div>
+            <input type="submit" value="Sign in">
+        </div>
+    </form>
+</body>
+</html>
+
