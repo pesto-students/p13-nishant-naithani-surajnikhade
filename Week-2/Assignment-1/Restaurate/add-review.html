@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add reviews</title>
+    <link rel="stylesheet" href="add-review.css">
+  </head>
+  <body>
+    <header style="margin-bottom: 20px;">
+      <h1>Restaurant Reviews</h1>
+      <nav>
+          <a href="home.html">Home</a>
+          <a href="add-review.html">Add Review</a>
+          <a href="about.html">About</a>
+      </nav>
+  </header>
+    <main>
+        <h2>Add Review</h2>
+      <form method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="fullName">Full name:</label>
+          <input type="text" id="fullName" name="fullName" required />
+        </div>
+        <div class="form-group">
+          <label for="restaurant">Restaurant:</label>
+          <select name="restaurant">
+            <option value="Main Street Cafe">Main Street Cafe</option>
+            <option value="Greek House">Greek House</option>
+
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="dateOfVisit">Date of visit:</label>
+          <input type="date" id="dateOfVisit" name="dateOfVisit" />
+        </div>
+        <div class="form-group">
+          <label for="rating">Rating:</label>
+          <input type="number" id="rating" name="rating" value="5" min="1" max="5" />
+        </div>
+        <div class="form-group">
+          <label for="details">Details:</label>
+          <textarea id="details" name="details" rows="3" cols="50"></textarea>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
