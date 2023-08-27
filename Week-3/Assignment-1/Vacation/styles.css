@@ -84,3 +84,43 @@
     margin-left: 10px;
     margin-right: 20px;
  }
+ @media (min-width: 600px) {
+   .benefits-inner-container {
+     flex-direction: row;
+   }
+ 
+   .benefit {
+     flex: 1;
+     margin: 0 10px;
+   }
+ }
+ 
+ @media (min-width: 700px) {
+   nav ul {
+     display: flex;
+   }
+ 
+   nav li {
+     display: inline;
+     margin: 0 10px;
+     padding: 0;
+   }
+ 
+   header > h1 {
+     font-size: 3rem;
+   }
+ }
+ @media (min-width: 800px) {
+   .vacation-container img {
+     width: 50vw;
+   }
+ 
+   .vacation-container {
+     display: flex;
+     align-items: center;
+   }
+ 
+   .vacation-container > div {
+     margin-left: 20px;
+   }
+ }
