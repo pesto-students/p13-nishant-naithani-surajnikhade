@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    background: radial-gradient(white, lightgray);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: darkblue;
+    padding: 8px;
+    text-shadow: 5px 5px 6px gray;
+}
+
+main {
+    padding: 20px;
+}
+
+p {
+    color: white;
+    width: 350px;
+    font-size: 16px;
+    padding: 10px;
+    background: linear-gradient(to bottom right, darkblue, skyblue);
+    box-shadow: 5px 5px 6px gray;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+a {
+    font-size: 12px;
+    color: darkblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
