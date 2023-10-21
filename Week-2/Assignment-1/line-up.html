@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Line Up</title>
+    <link rel="stylesheet" href="line-up.css" />
+  </head>
+  <body>
+    <main>
+      <h2>Starting Lineup</h2>
+      <form>
+        <fieldset>
+          <legend>Status:</legend>
+          <p>
+            <label>
+              <input type="radio" name="status" value="draft" /> Draft
+            </label>
+            <label>
+              <input type="radio" name="status" value="final" checked /> Final
+            </label>
+          </p>
+        </fieldset>
+        <div>
+          <p>Game Date:</p>
+          <p>
+            <select name="gameDate">
+              <option value="March 20">March 20</option>
+              <option value="March 24">March 24</option>
+              <option value="April 2">April 2</option>
+              <option value="April 6">April 6</option>
+              <option value="April 13">April 13</option>
+            </select>
+          </p>
+        </div>
+
+        <fieldset>
+          <legend>Players:</legend>
+          <p class="player_name">
+            <label>
+              <input type="checkbox" name="player" value="Aarav Agarwal" />
+              Aarav Agarwal
+            </label>
+            <label>
+              <input type="checkbox" name="player" value="Ava Johnson" /> Ava
+              Johnson
+            </label>
+            <label>
+              <input type="checkbox" name="player" value="Julio Ortiz" /> Julio
+              Ortiz
+            </label>
+            <label>
+              <input type="checkbox" name="player" value="Liam Rubio" /> Liam
+              Rubio
+            </label>
+            <label>
+              <input type="checkbox" name="player" value="Emma Witherspoon" />
+              Emma Witherspoon
+            </label>
+          </p>
+        </fieldset>
+
+        <p>
+          <input type="submit" value="Submit" />
+        </p>
+      </form>
+    </main>
+  </body>
+</html>
