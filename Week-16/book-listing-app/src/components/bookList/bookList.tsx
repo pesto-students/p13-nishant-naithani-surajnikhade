@@ -1,12 +1,13 @@
+import BookDetails from '../bookDetails/bookDetails';
 import './bookList.css'
 
-const BookList = ({books} : any) => {
-    
+const BookList = ({ books }: any) => {
+
     return (
         <div className='book__wrapper'>
-            {books.map((book:any) => {
+            {books.map((book: any) => {
                 return (
-                    <><h3>{book.title}</h3><p>Author: {book.author}</p><p>Year: {book.year}</p></>
+                    <BookDetails bookDetails={book} />
                 )
             })}
         </div>
